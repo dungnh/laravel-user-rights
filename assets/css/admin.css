@@ -1,0 +1,120 @@
+/** ajax loading */
+#ajax-loading{ background-color: rgba(0,0,0,.5); height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 1000; }
+#ajax-loading img { left: 50%; margin: -15px 0 0 -45px ; position: absolute; top: 50%; z-index: 1001; }
+
+.table-wrap .table-header {
+    padding-bottom: 10px;
+}
+.table-wrap .table-footer .info-left {
+    float: left;
+}
+.table-wrap .table-footer .info-right {
+    float: right;
+}
+.table-wrap .table-footer .pagination {
+    margin: 5px 0;
+}
+.custom-select2{
+	display: block;
+	width: 100%;
+	height: 34px;
+
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555;
+	vertical-align: middle;
+	box-shadow: none;
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.custom-select2 .select2-choices { 
+	background: none; 
+	border: 1px solid #ccc;
+}
+.list-resource {
+	list-style: none;
+}
+.list-resource .resource-parent{
+	font-size: 16px;
+}
+.list-resource .resource-group ul.resource-children{
+	list-style: none;
+	font-weight: normal;
+}
+.list-resource .resource-group ul.resource-children label{
+	font-weight: normal;
+}
+.login-page { min-height: 100%; height: 100%; }
+#login-box { background-color: #fff; overflow: hidden; }
+#login-box .header { line-height: 1.5em; padding: 10px; text-transform: uppercase; }
+.remember-me { font-weight: normal; }
+.remember-me input { margin-right: 2px; }
+.form-box .footer .btn-login { padding: 8px 0; margin-bottom: 0; font-size: 20px; }
+.btn-login:hover { color: #333 !important;  }
+body.dragging, body.dragging * {
+	cursor: move !important;
+}
+
+.dragged {
+	position: absolute;
+	opacity: 0.5;
+	z-index: 2000;
+}
+ol.sortable-list li {
+	display: block;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #cccccc;
+	color: #0088cc;
+	background: #eeeeee;
+}
+ol.sortable-list li i {
+	cursor: pointer;
+}
+ol.sortable-list li:hover { background: #cccccc }
+
+ol.sortable-list li.placeholder {
+	position: relative;
+	/** More li styles **/
+}
+ol.sortable-list li.placeholder:before {
+	position: absolute;
+	/** Define arrowhead **/
+}
+.sortable-container { max-height: 450px; overflow: auto; }
+.resumable-error {display:none; font-size:14px; font-style:italic;}
+.resumable-drop {padding:15px; font-size:13px; text-align:center; color:#666; font-weight:bold;background-color:#eee; border:2px dashed #aaa; border-radius:10px; margin-top:20px; z-index:9999;}
+.resumable-dragover {padding:30px; color:#555; background-color:#ddd; border:1px solid #999;}
+.resumable-browse  { cursor: pointer; }
+/* Uploader: Progress bar */
+.resumable-progress {margin:10px 0 10px 0; width:100%; display:block;}
+.progress-container {height:7px; background:#9CBD94; position:relative; }
+resumable-progress .progress-bar {position:absolute; top:0; left:0; bottom:0; background:#45913A; width:0;}
+resumable-progress .progress-text {font-size:11px; line-height:9px; padding-left:10px;}
+resumable-progress .progress-pause {padding:0 0 0 7px;}
+resumable-progress .progress-resume-link {display:none;}
+.is-paused .progress-resume-link {display:inline;}
+.is-paused .progress-pause-link {display:none;}
+.is-complete .progress-pause {display:none;}
+
+/* Uploader: List of items being uploaded */
+.resumable-list {overflow:hidden; display:none;}
+.uploader-item {width:148px; height:90px; background-color:#666; position:relative; border:2px solid black; float:left; margin:0 6px 6px 0;}
+.uploader-item-thumbnail {width:100%; height:100%; position:absolute; top:0; left:0;}
+.uploader-item img.uploader-item-thumbnail {opacity:0;}
+.uploader-item-creating-thumbnail {padding:0 5px; font-size:9px; color:white;}
+.uploader-item-title {position:absolute; font-size:9px; line-height:11px; padding:3px 50px 3px 5px; bottom:0; left:0; right:0; color:white; background-color:rgba(0,0,0,0.6); min-height:27px;}
+.uploader-item-status {position:absolute; bottom:3px; right:3px;}
+
+/* Uploader: Hover & Active status */
+.uploader-item:hover, .is-active .uploader-item {border-color:#4a873c; cursor:pointer; }
+.uploader-item:hover .uploader-item-title, .is-active .uploader-item .uploader-item-title {background-color:rgba(74,135,60,0.8);}
+
+/* Uploader: Error status */
+.is-error .uploader-item:hover, .is-active.is-error .uploader-item {border-color:#900;}
+.is-error .uploader-item:hover .uploader-item-title, .is-active.is-error .uploader-item .uploader-item-title {background-color:rgba(153,0,0,0.6);}
+.is-error .uploader-item-creating-thumbnail {display:none;}
+.resumable-status .resumable-filename, .resumable-status .resumable-percent{ font-size: 14px;font-weight: bold }
+.videos-actions a:last-child { margin-left: 10px; }
+.relative-list-videos { height: 650px; overflow: auto }
+.relative-list-videos .thumbnail img { width: 185px; height: 140px; }

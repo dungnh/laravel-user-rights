@@ -1,0 +1,1 @@
+<?phprequire __DIR__ . '/routes/admin_routes.php';Route::get('/', function(){    return Redirect::route('admin.logout');});
